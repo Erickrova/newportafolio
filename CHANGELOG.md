@@ -1,5 +1,7 @@
 # CHANGELOG
 ## 1.0.6
+### Paginas
+* se agregó pagina para la visualización/descarga del certificado del curso "React - La Guía Completa: Hooks Context Redux MERN +15 Apps" de Udemy
 ### Barra de navegación
 * se cambió el texto de "portafolio|Erick Romaña" por "portafolio|<Erick Romaña>" para hacerlo mas acorde con el logo personal
 ### sección "Sobre mi"
