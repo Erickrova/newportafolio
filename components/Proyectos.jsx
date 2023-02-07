@@ -22,7 +22,7 @@ const Proyectos = () => {
           <CardProyecto key={proyecto.id} proyecto={proyecto} />
         )):null}
       </div>
-      <Link href="/proyectos" className='text-center text-white hover:text-amber-400 block underline pt-2'>Ver Más Proyectos</Link>
+      <Link href="/proyectos" className='text-center text-white text-xl hover:text-amber-400 block underline pt-2'>Ver Más Proyectos</Link>
     </section>
   )
 }

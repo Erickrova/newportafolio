@@ -5,17 +5,23 @@ import React from 'react'
 const SobreMi = () => {
   return (
     <section id='sobremi' className='md:w-2/3 mx-auto py-4 pt-12 px-2 '>
-        <div className='flex gap-2 items-center justify-center'>
-            <h1 className='text-xl font-bold text-center dark:text-white transition-colors'>Erick Romaña |</h1>
-            <Link href="hojadevida" className="text-red-500 hover:text-red-600 inline-block text-xl underline font-bold" >
-                Hoja De Vida
+        <div className='flex gap-2 items-center justify-center flex-col mb-4'>
+            <h1 className='text-3xl font-bold text-center dark:text-white transition-colors animate-bounce'>&lt;Erick Romaña/&gt;</h1>
+            <Link href="hojadevida" className="bg-red-500 hover:bg-red-600 text-xl font-bold p-2 rounded-md text-white flex items-center justify-center transition-colors" target={"_blank"} >
+                CV
+                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-download" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                <polyline points="7 11 12 16 17 11" />
+                <line x1="12" y1="4" x2="12" y2="16" />
+                </svg>
             </Link>
         </div>
         <div>
             <p className=" md:text-center dark:text-white transition-colors">
                 Desarrollador web Frontend con conocimientos basicos de backend.
             </p>
-            <p className=" tmd:ext-center dark:text-white transition-colors">
+            <p className=" md:text-center dark:text-white transition-colors">
                 Soy una persona apasionada por la Tecnología y
                 el desarrollo de soluciones web,
                 con ganas de
@@ -42,8 +48,15 @@ const SobreMi = () => {
           </p>
           <p className=" md:text-center dark:text-white transition-colors">
             - <span className="font-bold">Udemy:</span><br/>
-            <span className="pl-4">* Curso de desarrollo web full stack | en proceso</span><br/>
-            <span className="pl-4">* Curso de REACT STACK MERN (Vite,Next,Gastby) | en proceso</span>
+            <Link href="certificado-udemy" className="p-2 rounded-md hover:text-gray-700 dark:text-white dark:hover:text-gray-200 flex items-center justify-center transition-colors" target={"_blank"} >
+            -React - La Guía Completa: Hooks Context Redux MERN +15 Apps
+                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-download bg-red-500 hover:bg-red-600 p-1 rounded-full" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                <polyline points="7 11 12 16 17 11" />
+                <line x1="12" y1="4" x2="12" y2="16" />
+                </svg>
+            </Link>
           </p>
       </div>
       <div className='pt-2'>
