@@ -6,6 +6,10 @@ module.exports = {
     "./components/**/*.{js,jsx}",
   ],
   theme: {
+    fontFamily: {
+      'eczar': ['Eczar', 'serif'],
+      'roboto': ['Roboto','sans-serif;'],
+    },
     extend: {
       keyframes: {
         wave: {
