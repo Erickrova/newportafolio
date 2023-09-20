@@ -4,14 +4,15 @@ import Link from "next/link"
 const CvButton = () => {
   return (
     <Link
-      href="hojadevida"
-      className="bg-red-500 hover:bg-red-600 text-xl font-bold p-2 rounded-md text-white flex items-center justify-center transition-colors"
-      target={"_blank"}
+      href="/ErickRomañaHojadeVida.pdf"
+      className="border-2 border-gray-300 bg-none hover:bg-red-600  p-2 rounded-md  flex items-center justify-center transition-colors w-full hover:text-white"
+      download
+      target="_blanck"
     >
-      CV
+      <span className="text-xl font-bold  dark:text-white">Descargar CV</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="icon icon-tabler icon-tabler-download"
+        className="icon icon-tabler icon-tabler-download stroke-black dark:stroke-white"
         width="32"
         height="32"
         viewBox="0 0 24 24"

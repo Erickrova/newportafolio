@@ -9,12 +9,13 @@ const proyectos = [
     },
     {
         id:2,
-        nombre: "Uptask MERN",
-        path:"uptaskmern",
-        descripcion: "Gestor de proyectos",
-        img:"/proyectos/uptaskmern.png",
-        url: "https://uptask-erick.netlify.app"
+        nombre: "Anime Search",
+        path:"animesearch",
+        descripcion: "Buscador de animes",
+        img:"/proyectos/animesearch.png",
+        url: "https://animebuscador.netlify.app"
     },
+    
     {
         id:3,
         nombre: "PanePik",
@@ -25,28 +26,29 @@ const proyectos = [
     },
     {
         id:4,
-        nombre: "Anime Search",
-        path:"animesearch",
-        descripcion: "Buscador de animes",
-        img:"/proyectos/animesearch.png",
-        url: "https://animebuscador.netlify.app"
+        nombre: "School Adm",
+        path:"schooladm",
+        descripcion: "Administrador escolar y universitario",
+        img:"/proyectos/schooladm.png",
+        url: "https://schooladm.netlify.app"
     },
     {
         id:5,
+        nombre: "Uptask MERN",
+        path:"uptaskmern",
+        descripcion: "Gestor de proyectos",
+        img:"/proyectos/uptaskmern.png",
+        url: "https://uptask-erick.netlify.app"
+    },
+    {
+        id:6,
         nombre: "Cotizador de Criptomonedas",
         path:"cotizador-cripto",
         descripcion: "Web para saber el valor actual de una criptomoneda",
         img:"/proyectos/cripto.png",
         url: "https://cotizadorcriptoserick.netlify.app"
     },
-    {
-        id:6,
-        nombre: "Controlador de Gastos",
-        path:"controlador-gastos",
-        descripcion: "Web para Administracion de gastos",
-        img:"/proyectos/planificadorgastos.png",
-        url: "https://controladorgastos.netlify.app"
-    },
+    
     {
         id:7,
         nombre: "Citas React",
@@ -57,6 +59,14 @@ const proyectos = [
     },
     {
         id:8,
+        nombre: "Controlador de Gastos",
+        path:"controlador-gastos",
+        descripcion: "Web para Administracion de gastos",
+        img:"/proyectos/planificadorgastos.png",
+        url: "https://controladorgastos.netlify.app"
+    },
+    {
+        id:9,
         nombre: "Festival Erick ROCK & EDM",
         path:"rock-and-edm",
         descripcion: "Promocional para Festival de ROCK & EDM",

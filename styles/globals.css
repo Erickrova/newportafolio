@@ -6,5 +6,15 @@
     html{
         @apply scroll-smooth !important;
     }
+    
+    ::selection{
+        color: rgb(239 68 68 / 1);
+    }
+    ::-webkit-scrollbar{
+        @apply w-2 bg-white dark:bg-black
+    }
+    ::-webkit-scrollbar-thumb{
+        @apply dark:bg-white bg-black rounded-md
+    }
 }
 

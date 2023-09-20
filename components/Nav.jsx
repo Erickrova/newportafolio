@@ -35,7 +35,7 @@ const Nav = () => {
       >
         <Link
           href="/#sobremi"
-          className="text-xl font-bold hover:bg-gray-200 p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors dark:hover:bg-gray-500"
+          className="text-xl hover:rounded-md font-bold hover:bg-gray-200 p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors dark:hover:bg-gray-500"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -51,14 +51,13 @@ const Nav = () => {
               d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
             />
           </svg>
-          <span id="navsobremi" className=" dark:text-amber-400">
-            Sobre mi
+          <span id="navsobremi" className=" dark:text-white">
+            Sobre m{"í" || "&Iacute;"}
           </span>
         </Link>
         <Link
-          id="navproyectos"
           href="/#proyectos"
-          className="text-xl font-bold hover:bg-gray-200 p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors dark:hover:bg-gray-500"
+          className="text-xl hover:rounded-md  font-bold hover:bg-gray-200 p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors dark:hover:bg-gray-500"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,12 +78,13 @@ const Nav = () => {
               d="M4.867 19.125h.008v.008h-.008v-.008z"
             />
           </svg>
-          <span className="dark:text-amber-400">Proyectos</span>
+          <span id="navproyectos" className="dark:text-white">
+            Proyectos
+          </span>
         </Link>
         <Link
-          id="navcontacto"
           href="/#contacto"
-          className="text-xl font-bold hover:bg-gray-200 p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors dark:hover:bg-gray-500"
+          className="text-xl hover:rounded-md  font-bold hover:bg-gray-200 p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors dark:hover:bg-gray-500"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,9 @@ const Nav = () => {
               d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
             />
           </svg>
-          <span className="dark:text-amber-400">Contacto</span>
+          <span id="navcontacto" className="dark:text-white">
+            Contacto
+          </span>
         </Link>
       </div>
       <DarkModeSwitch />

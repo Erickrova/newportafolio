@@ -18,7 +18,7 @@ const CardProyecto = ({ proyecto }) => {
       onMouseOver={onhover}
       onMouseLeave={onLeave}
       href={`/proyectos/${proyecto.path}`}
-      className={`relative hover:scale-105 hover:z-10 transition-all overflow-hidden bg-white hover:bg-gray-200`}
+      className={`relative hover:scale-105 hover:z-10 transition-all hover:rounded-md overflow-hidden bg-white hover:bg-gray-200`}
     >
       <Image
         src={`${proyecto.img}`}
@@ -28,7 +28,7 @@ const CardProyecto = ({ proyecto }) => {
         width={800}
         alt={`${proyecto.nombre}`}
       />
-      <p className="p-2">{proyecto.nombre}</p>
+      <p className="p-2 font-roboto">{proyecto.nombre}</p>
       <div
         id={`target${proyecto.path}`}
         className="absolute p-2 -bottom-full transition-all z-10 w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-transparent to-black"
