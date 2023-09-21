@@ -1,7 +1,10 @@
 import React from "react"
 import Link from "next/link"
+import { useTranslation } from "react-i18next"
 
 const CvLink = () => {
+  const [t] = useTranslation("global")
+
   const hovereye = () => {
     const closeeye = document.getElementById("closeeye")
     const openeye = document.getElementById("openeye")
@@ -25,7 +28,7 @@ const CvLink = () => {
       target="_blanck"
       onMouseOver={hovereye}
       onMouseLeave={leaveeye}
-      title="Ver CV"
+      title={t("about-me.see-cv-title-atribute")}
     >
       <svg
         id="closeeye"

@@ -38,7 +38,7 @@ const SchoolAdm = () => {
                 tareas y eventos
               </p>
               <Link
-                href={"https://github.com/Erickrova/panepik_frontend"}
+                href={"https://github.com/Erickrova/schooladm_frontend"}
                 className="font-bold text-xl text-red-500 hover:text-red-600 transition-colors underline"
                 target="_blank"
               >
@@ -53,7 +53,7 @@ const SchoolAdm = () => {
                 <ol className="pl-7">
                   <li className="list-disc">React</li>
                   <li className="list-disc">Tailwindcss</li>
-                  <li className="list-disc">Vite</li>
+                  <li className="list-disc">Next.js</li>
                   <li className="list-disc">Html</li>
                   <li className="list-disc">JavaScript</li>
                   <li className="list-disc">Css</li>
@@ -62,7 +62,6 @@ const SchoolAdm = () => {
                 <ol className="pl-7">
                   <li className="list-disc">Node.js</li>
                   <li className="list-disc">Express.js</li>
-                  <li className="list-disc">Socket.io</li>
                 </ol>
                 <p className="text-xl font-medium">Data Base</p>
                 <ol className="pl-7">
@@ -70,8 +69,8 @@ const SchoolAdm = () => {
                 </ol>
               </section>
               <section>
-                <h3 className="text-2xl font-medium">Características</h3>
-                <ol className="pl-7">
+                {/* <h3 className="text-2xl font-medium">Características</h3> */}
+                {/* <ol className="pl-7">
                   <li className="list-disc">Creación de publicaciones:</li>
                   <li className="list-disc bg-gray-100 flex flex-col items-center justify-center p-2 gap-2">
                     <Image
@@ -147,7 +146,7 @@ const SchoolAdm = () => {
                       alt={`phears image`}
                     />
                   </li>
-                </ol>
+                </ol> */}
               </section>
             </div>
           </div>

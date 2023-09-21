@@ -4,9 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      {/*-- Google tag (gtag.js) -->*/}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCPSPRJWRR"></script>
-
           <meta name="keywords" content="desarrollador web,colombia, html, css, javascript, diseño responsivo, frameworks,desarrollo de aplicaciones web,programador, frontend, frontend developer, web dev, erick romagna,erick"></meta>
           <link rel="icon" href="/favicon.ico" />
           <meta name="author" content="Erick Romaña"/>

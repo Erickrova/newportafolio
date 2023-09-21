@@ -12,12 +12,6 @@ const Header = () => {
       >
         {t("header.portfolio")} | &lt;Erick/&gt;
       </Link>
-      <button type="button" onClick={() => i18n.changeLanguage("en")}>
-        EN
-      </button>
-      <button type="button" onClick={() => i18n.changeLanguage("es")}>
-        ES
-      </button>
       <Nav />
     </header>
   )

@@ -4,8 +4,10 @@ import React from "react"
 import CvButton from "./CvButton"
 import CvLink from "./CvLink"
 import Habilidades from "./Habilidades"
+import { useTranslation } from "react-i18next"
 
 const SobreMi = () => {
+  const [t] = useTranslation("global")
   return (
     <section
       id="sobremi"
@@ -30,7 +32,7 @@ const SobreMi = () => {
             </h1>
             <div>
               <p className=" font-roboto text-xl text-center text-gray-700 dark:text-gray-400 transition-colors mb-4">
-                Desarrollador Frontend
+                {t("about-me.profession")}
               </p>
               <div className="flex gap-1">
                 <CvButton />
@@ -42,9 +44,7 @@ const SobreMi = () => {
       </div>
       <div className=" pt-20 flex justify-center items-center">
         <p className=" px-10 md:px-0 text-4xl font-eczar text-center dark:text-white transition-colors">
-          Persona apasionada por la Tecnología y el desarrollo de soluciones
-          web, con ganas de aprender, que sabe escuchar, aprender de los demás y
-          esta en constante búsqueda del conocimiento.
+          {t("about-me.description")}
         </p>
       </div>
       {/* <div className="pt-2">
@@ -59,14 +59,13 @@ const SobreMi = () => {
         </p>
       </div> */}
       <h3 className="text-center text-3xl font-bold  font-roboto mt-10 md:mt-28 pb-4 dark:text-white transition-colors">
-        Datos Academicos
+        {t("about-me.title-academy-data")}
       </h3>
       <div className="flex flex-col md:flex-row justify-evenly items-center px-2">
         <div className="pt-2">
           <p className=" dark:text-white transition-colors">
-            -{" "}
-            <span className="font-bold">Universidad Marco Fidel Suarez: </span>
-            Ingeniería de Sistemas | 3er semestre
+            - <span className="font-bold">{t("about-me.university")}: </span>
+            {t("about-me.career")} | {t("about-me.career-semester")}
           </p>
           <p className=" dark:text-white transition-colors">
             - <span className="font-bold">Udemy:</span>
@@ -101,14 +100,22 @@ const SobreMi = () => {
         </div>
         <div className="pt-2 flex flex-col  mt-0 mb-auto">
           <h3 className="my-0 text-center text-xl font-bold pb-2 dark:text-white transition-colors">
-            Idiomas
+            {t("about-me.languages")}
           </h3>
           <div>
             <p className=" dark:text-white transition-colors">
-              - <span className="font-bold">Español |</span> Nativo
+              -{" "}
+              <span className="font-bold">
+                {t("about-me.spanish-language")} |
+              </span>{" "}
+              {t("about-me.native")}
             </p>
             <p className=" dark:text-white transition-colors">
-              - <span className="font-bold">Ingles |</span> A2
+              -{" "}
+              <span className="font-bold">
+                {t("about-me.english-language")} |
+              </span>{" "}
+              A2
             </p>
           </div>
         </div>

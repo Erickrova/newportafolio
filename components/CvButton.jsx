@@ -1,15 +1,21 @@
 import React from "react"
 import Link from "next/link"
+import { useTranslation } from "react-i18next"
+import useApp from "../hooks/useApp"
 
 const CvButton = () => {
+  const [t] = useTranslation("global")
+  const { localStorageLan } = useApp()
   return (
     <Link
-      href="/ErickRomañaHojadeVida.pdf"
+      href={`${localStorageLan == "es" ? "/ErickRomañaHojadeVida.pdf" : ""}`}
       className="border-2 border-gray-300 bg-none hover:bg-red-600  p-2 rounded-md  flex items-center justify-center transition-colors w-full hover:text-white"
       download
       target="_blanck"
     >
-      <span className="text-xl font-bold  dark:text-white">Descargar CV</span>
+      <span className="text-xl font-bold  dark:text-white">
+        {t("about-me.download-cv-button")}
+      </span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="icon icon-tabler icon-tabler-download stroke-black dark:stroke-white"

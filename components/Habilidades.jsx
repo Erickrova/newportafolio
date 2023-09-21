@@ -1,11 +1,13 @@
 import React from "react"
 import Image from "next/image"
+import { useTranslation } from "react-i18next"
 
 const Habilidades = () => {
+  const [t] = useTranslation("global")
   return (
     <div className="pt-2 md:pt-16">
       <h3 className="text-center text-3xl font-bold font-roboto pb-2 dark:text-white transition-colors">
-        Habilidades
+        {t("skills.skills")}
       </h3>
       <div className="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 items-center justify-center p-6 ">
         {/* agregar animacion de vibracion al dar click sobre un logo */}

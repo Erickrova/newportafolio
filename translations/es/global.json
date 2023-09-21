@@ -1,5 +1,37 @@
 {
     "header":{
-        "portfolio":"Portafolio"
+        "portfolio":"Portafolio",
+        "about-me":"Sobre mí",
+        "projects":"Proyectos",
+        "contact":"Contacto"
+    },
+    "about-me":{
+        "profession":"Desarrollador Frontend",
+        "download-cv-button":"Descargar CV",
+        "see-cv-title-atribute":"Ver CV",
+        "description":"Persona apasionada por la Tecnología y el desarrollo de soluciones web, con ganas de aprender, que sabe escuchar, aprender de los demás y esta en constante búsqueda del conocimiento.",
+        "title-academy-data":"Datos Académicos",
+        "university":"Universidad Marco Fidel Suarez",
+        "career":"Ingeniería de Sistemas",
+        "career-semester":"3er Semestre",
+        "languages":"Idiomas",
+        "spanish-language":"Español",
+        "english-language":"Ingles",
+        "native":"Nativo"
+    },
+    "skills":{
+        "skills":"Habilidades"
+    },
+    "projects":{
+        "title-projects":"Proyectos",
+        "see-more-projects":"Ver Más Proyectos"
+    },
+    "contact":{
+        "title-contact":"Métodos de Contacto",
+        "whatsapp-contact":"Contáctame vía Whatsapp",
+        "linkedin-contact":"Visita mi Linkedin",
+        "github-contact":"Visita mi Github",
+        "github-contact-title-atribute":"Revisa el codigo de algunos de los proyectos en mi github",
+        "mail-contact-title-atribute":"Contáctame via Mail"
     }
 }

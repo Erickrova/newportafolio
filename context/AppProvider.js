@@ -1,13 +1,16 @@
 import { useState,useEffect } from "react";
 import { createContext } from "react";
+import { useTranslation } from "react-i18next"
 
 const AppContext = createContext()
 
 const AppProvider = ({children}) =>{
 
+    const [t,i18n] = useTranslation("global")
     const [enabled, setEnabled] = useState(false);
+    const [localStorageLan, setLocalStorageLan] = useState("es");
     const [theme, setTheme] = useState(false);
-
+    
 
     useEffect(()=>{
         const theme = localStorage.getItem("theme") ?? "ligth"
@@ -31,12 +34,33 @@ const AppProvider = ({children}) =>{
             }
         }
     },[enabled,theme])
+    
+    useEffect(()=>{
+        if(i18n){
+
+            const localLan = localStorage.getItem("lan")
+            if(!localLan){
+                localStorage.setItem("lan","es")
+                setLocalStorageLan("es")
+            }
+            if(localLan){
+                setLocalStorageLan(localLan)
+            }
+        }
+    },[i18n])
+    useEffect(()=>{
+        if(localStorageLan){
+            i18n.changeLanguage(localStorageLan)
+        }
+    },[localStorageLan,i18n])
 
     return(
         <AppContext.Provider
             value={{
                 enabled,
-                setEnabled
+                setEnabled,
+                localStorageLan,
+                setLocalStorageLan
             }}
         >
             {children}

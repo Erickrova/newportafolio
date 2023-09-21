@@ -1,5 +1,37 @@
 {
     "header":{
-        "portfolio":"Portfolio"
+        "portfolio":"Portfolio",
+        "about-me":"About me",
+        "projects":"Projects",
+        "contact":"Contact"
+    },
+    "about-me":{
+        "profession":"Frontend Developer",
+        "download-cv-button":"Download CV",
+        "see-cv-title-atribute":"See CV",
+        "description":"Person passionate about Technology and the development of web solutions, eager to learn, who knows how to listen, learn from others and is in constant search for knowledge.",
+        "title-academy-data":"Academic Data",
+        "university":"Marco Fidel Suarez University",
+        "career":"Systems Engineer",
+        "career-semester":"3rd semester",
+        "languages":"Languages",
+        "spanish-language":"Spanish",
+        "english-language":"English",
+        "native":"Native"
+    },
+    "skills":{
+        "skills":"Skills"
+    },
+    "projects":{
+        "title-projects":"Projects",
+        "see-more-projects":"See More Projects"
+    },
+    "contact":{
+        "title-contact":"Contact Methods",
+        "whatsapp-contact":"Contact me by Whatsapp",
+        "linkedin-contact":"Visit my Linkedin",
+        "github-contact":"Visit my Github",
+        "github-contact-title-atribute":"Check my Github",
+        "mail-contact-title-atribute":"Contact me by Mail"
     }
 }
