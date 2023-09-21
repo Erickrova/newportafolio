@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
           <meta name="keywords" content="desarrollador web,colombia, html, css, javascript, diseño responsivo, frameworks,desarrollo de aplicaciones web,programador, frontend, frontend developer, web dev, erick romagna,erick"></meta>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/Erick.ico" />
           <meta name="author" content="Erick Romaña"/>
           <meta name="copyright" content="Erick Romaña"></meta>
           <meta name="description" content="Persona apasionada por la Tecnología y el desarrollo de soluciones
