@@ -1,9 +1,11 @@
 import React from "react"
 import Link from "next/link"
 import { useTranslation } from "react-i18next"
+import useApp from "../hooks/useApp"
 
 const CvLink = () => {
   const [t] = useTranslation("global")
+  const { localStorageLan } = useApp()
 
   const hovereye = () => {
     const closeeye = document.getElementById("closeeye")
@@ -23,7 +25,7 @@ const CvLink = () => {
   }
   return (
     <Link
-      href="/hojadevida"
+      href={`${localStorageLan == "es" ? "/hojadevida" : "/cv"}`}
       className="border-2 border-gray-300 text-xl font-bold p-2 rounded-md text-white flex items-center justify-center transition-colors"
       target="_blanck"
       onMouseOver={hovereye}

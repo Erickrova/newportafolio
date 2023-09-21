@@ -8,7 +8,11 @@ const CvButton = () => {
   const { localStorageLan } = useApp()
   return (
     <Link
-      href={`${localStorageLan == "es" ? "/ErickRomañaHojadeVida.pdf" : ""}`}
+      href={`${
+        localStorageLan == "es"
+          ? "/ErickRomañaHojadeVida.pdf"
+          : "EnglishErickRomañaHojadeVida.pdf"
+      }`}
       className="border-2 border-gray-300 bg-none hover:bg-red-600  p-2 rounded-md  flex items-center justify-center transition-colors w-full hover:text-white"
       download
       target="_blanck"
