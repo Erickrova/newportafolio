@@ -2,48 +2,33 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import Layout from "../../components/Layout"
+import PrincipalImage from "../../components/proyectos/PrincipalImage"
+import MainContent from "../../components/proyectos/MainContent"
+import TitleAndLink from "../../components/proyectos/TitleAndLink"
+import SubtitleAndRepositorylink from "../../components/proyectos/SubtitleAndRepositorylink"
 
 const SchoolAdm = () => {
   return (
     <Layout>
-      <div className="md:w-full bg-gray-400 dark:text-white transition-colors">
-        <div className="md:w-2/3 mx-auto flex items-center justify-center">
-          <Link href={"https://schooladm.netlify.app"} target="_blank">
-            <Image
-              src={`/proyectos/schooladm.png`}
-              className="hover:brightness-50"
-              quality={100}
-              priority
-              height={400}
-              width={800}
-              alt={`phears image`}
-            />
-          </Link>
-        </div>
-        <div className="w-full border-t-2 border-gray-500 bg-white dark:bg-neutral-800 transition-colors py-4">
+      <div className="md:w-full">
+        <PrincipalImage
+          url={"https://schooladm.netlify.app"}
+          imageUrl={"/proyectos/schooladm.png"}
+          alt={"schooladm image"}
+        />
+        <MainContent>
           <div className="md:w-2/3 mx-auto p-2">
-            <div className="flex flex-col md:flex-row justify-between">
-              <h2 className="text-3xl font-bold">SchoolAdm</h2>
-              <Link
-                href={"https://schooladm.netlify.app"}
-                className="font-bold text-xl text-red-500 hover:text-red-600 transition-colors underline"
-                target="_blank"
-              >
-                Ir al Proyecto
-              </Link>
-            </div>
-            <div>
-              <p className="text-xl">
-                Administrador escolar y universitario donde podrás crear y subir
-                tareas y eventos
-              </p>
-              <Link
-                href={"https://github.com/Erickrova/schooladm_frontend"}
-                className="font-bold text-xl text-red-500 hover:text-red-600 transition-colors underline"
-                target="_blank"
-              >
-                Ver repositorio de github
-              </Link>
+            <TitleAndLink
+              title={"SchoolAdm"}
+              url={"https://schooladm.netlify.app"}
+            />
+            <div className="text-black dark:text-white transition-colors">
+              <SubtitleAndRepositorylink
+                subtitle={
+                  "Administrador escolar y universitario donde podrás crear y subir tareas y eventos"
+                }
+                repoUrl={"https://github.com/Erickrova/schooladm_frontend"}
+              />
               <section>
                 <h3 className="text-2xl font-medium">Tecnologías</h3>
                 <p className="text-xl">
@@ -55,8 +40,10 @@ const SchoolAdm = () => {
                   <li className="list-disc">Tailwindcss</li>
                   <li className="list-disc">Next.js</li>
                   <li className="list-disc">Html</li>
-                  <li className="list-disc">JavaScript</li>
+                  <li className="list-disc">TypeScript</li>
                   <li className="list-disc">Css</li>
+                  <li className="list-disc">Jest</li>
+                  <li className="list-disc">React Testing Library</li>
                 </ol>
                 <p className="text-xl font-medium">Backend</p>
                 <ol className="pl-7">
@@ -69,31 +56,13 @@ const SchoolAdm = () => {
                 </ol>
               </section>
               <section>
-                {/* <h3 className="text-2xl font-medium">Características</h3> */}
-                {/* <ol className="pl-7">
-                  <li className="list-disc">Creación de publicaciones:</li>
+                <h3 className="text-2xl font-medium">Características</h3>
+                <ol className="pl-7">
+                  <li className="list-disc">Panel de Administración:</li>
                   <li className="list-disc bg-gray-100 flex flex-col items-center justify-center p-2 gap-2">
                     <Image
                       className="h-72 w-auto"
-                      src={`/other/panepik.png`}
-                      quality={100}
-                      priority
-                      height={400}
-                      width={800}
-                      alt={`phears image`}
-                    />
-                    <Image
-                      className="h-72 w-auto"
-                      src={`/other/panepik2.png`}
-                      quality={100}
-                      priority
-                      height={400}
-                      width={800}
-                      alt={`phears image`}
-                    />
-                    <Image
-                      className="h-72 w-auto"
-                      src={`/other/panepik3.png`}
+                      src={`/other/school1.png`}
                       quality={100}
                       priority
                       height={400}
@@ -101,20 +70,11 @@ const SchoolAdm = () => {
                       alt={`phears image`}
                     />
                   </li>
-                  <li className="list-disc">Chat</li>
+                  <li className="list-disc">Eventos</li>
                   <li className="list-disc bg-gray-100 flex flex-col items-center justify-center p-2 gap-2">
                     <Image
                       className="h-72 w-auto"
-                      src={`/other/panepik4.png`}
-                      quality={100}
-                      priority
-                      height={400}
-                      width={800}
-                      alt={`phears image`}
-                    />
-                    <Image
-                      className="h-72 w-auto"
-                      src={`/other/panepik5.png`}
+                      src={`/other/school2.png`}
                       quality={100}
                       priority
                       height={400}
@@ -122,11 +82,11 @@ const SchoolAdm = () => {
                       alt={`phears image`}
                     />
                   </li>
-                  <li className="list-disc">Sistema de amigos</li>
+                  <li className="list-disc">Tareas</li>
                   <li className="list-disc bg-gray-100 flex flex-col items-center justify-center p-2 gap-2">
                     <Image
                       className="h-72 w-auto"
-                      src={`/other/panepik6.png`}
+                      src={`/other/school3.png`}
                       quality={100}
                       priority
                       height={400}
@@ -134,11 +94,11 @@ const SchoolAdm = () => {
                       alt={`phears image`}
                     />
                   </li>
-                  <li className="list-disc">Busqueda de amigos</li>
+                  <li className="list-disc">Perfil</li>
                   <li className="list-disc bg-gray-100 flex flex-col items-center justify-center p-2 gap-2">
                     <Image
                       className="h-72 w-auto"
-                      src={`/other/panepik7.png`}
+                      src={`/other/school4.png`}
                       quality={100}
                       priority
                       height={400}
@@ -146,11 +106,11 @@ const SchoolAdm = () => {
                       alt={`phears image`}
                     />
                   </li>
-                </ol> */}
+                </ol>
               </section>
             </div>
           </div>
-        </div>
+        </MainContent>
       </div>
     </Layout>
   )

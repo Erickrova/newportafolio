@@ -2,49 +2,31 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import Layout from "../../components/Layout"
+import PrincipalImage from "../../components/proyectos/PrincipalImage"
+import MainContent from "../../components/proyectos/MainContent"
+import TitleAndLink from "../../components/proyectos/TitleAndLink"
+import SubtitleAndRepositorylink from "../../components/proyectos/SubtitleAndRepositorylink"
 
 const Animesearch = () => {
   return (
     <Layout>
       <div className="md:w-full ">
-        <div className="md:w-3/4 mx-auto flex items-center justify-center bg-gray-400">
-          <Link href={"https://animebuscador.netlify.app"} target="_blank">
-            <Image
-              src={`/proyectos/animesearch.png`}
-              className="md:hover:brightness-50"
-              quality={100}
-              priority
-              height={400}
-              width={800}
-              alt={`phears image`}
-            />
-          </Link>
-        </div>
-        <div className="w-full border-t-2 border-gray-500 transition-colors py-4">
+        <PrincipalImage
+          url={"https://animebuscador.netlify.app"}
+          imageUrl={"/proyectos/animesearch.png"}
+          alt={"phears image"}
+        />
+        <MainContent>
           <div className="md:w-2/3 mx-auto p-2">
-            <div className="flex flex-col md:flex-row justify-between">
-              <h2 className="text-3xl font-bold dark:text-white transition-colors">
-                Anime Search
-              </h2>
-              <Link
-                href={"https://animebuscador.netlify.app"}
-                className="font-bold text-xl text-red-500 hover:text-red-600 transition-colors underline"
-                target="_blank"
-              >
-                Ir al Proyecto
-              </Link>
-            </div>
+            <TitleAndLink
+              title={"Anime Search"}
+              url={"https://animebuscador.netlify.app"}
+            />
             <div>
-              <p className="text-xl dark:text-white transition-colors">
-                Buscador de animes
-              </p>
-              <Link
-                href={"https://github.com/Erickrova/anime_search"}
-                className="font-bold text-xl text-red-500 hover:text-red-600 transition-colors underline"
-                target="_blank"
-              >
-                Ver repositorio de github
-              </Link>
+              <SubtitleAndRepositorylink
+                subtitle={"Buscador de animes"}
+                repoUrl={"https://github.com/Erickrova/anime_search"}
+              />
               <section>
                 <h3 className="text-2xl font-medium dark:text-white transition-colors">
                   Tecnologías
@@ -141,7 +123,7 @@ const Animesearch = () => {
               </section>
             </div>
           </div>
-        </div>
+        </MainContent>
       </div>
     </Layout>
   )
