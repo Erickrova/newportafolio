@@ -13,7 +13,7 @@ const AppProvider = ({children}) =>{
     
 
     useEffect(()=>{
-        const theme = localStorage.getItem("theme") ?? "ligth"
+        const theme = localStorage.getItem("theme") ?? "dark"
         if(theme && theme == "dark"){
             setEnabled(true)
         }else{

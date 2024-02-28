@@ -13,12 +13,12 @@ export default function Home() {
           `nav${entry?.target?.id}`
         )
         sobreminavlink?.classList.remove("dark:text-white")
-        sobreminavlink?.classList.add("text-red-500")
+        sobreminavlink?.classList.add("text-azulrey")
       } else {
         const sobreminavlink = document.getElementById(
           `nav${entry?.target?.id}`
         )
-        sobreminavlink?.classList.remove("text-red-500")
+        sobreminavlink?.classList.remove("text-azulrey")
         sobreminavlink?.classList.add("dark:text-white")
       }
     })
@@ -30,12 +30,12 @@ export default function Home() {
     let observer = new IntersectionObserver(verifyObserver, {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3,
+      threshold: 0.2,
     })
     let observer2 = new IntersectionObserver(verifyObserver, {
       root: null,
       rootMargin: "0px",
-      threshold: 0.6,
+      threshold: 0.45,
     })
     let observer3 = new IntersectionObserver(verifyObserver, {
       root: null,

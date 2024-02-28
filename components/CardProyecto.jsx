@@ -18,7 +18,7 @@ const CardProyecto = ({ proyecto }) => {
       onMouseOver={onhover}
       onMouseLeave={onLeave}
       href={`/proyectos/${proyecto.path}`}
-      className={`relative hover:scale-105 hover:z-10 transition-all hover:rounded-md overflow-hidden bg-white hover:bg-gray-200`}
+      className={`proyecto relative hover:scale-105 hover:z-10 transition-all rounded-md overflow-hidden bg-white hover:bg-gray-200`}
     >
       <Image
         src={`${proyecto.img}`}

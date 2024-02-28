@@ -7,14 +7,61 @@ const Contacto = () => {
   const [t] = useTranslation("global")
   return (
     <Element name="contactosection">
-      <section id="contacto" className="mx-auto my-20 md:w-2/3 ">
+      <section id="contacto" className="mx-auto mt-20 mb-2 md:w-2/3 ">
         <h2 className="p-4 text-center text-3xl font-bold text-gray-700 dark:text-white transition-colors">
           {t("contact.title-contact")}
         </h2>
+        {/* <div>
+          {" "}
+          form para cuando tenga dominio propio
+          <form>
+            <div className="flex flex-col">
+              <label className="text-white" htmlFor="">
+                Name
+              </label>
+              <input
+                className="p-2 rounded-md"
+                type="text"
+                placeholder="company s.a"
+                name=""
+                id=""
+              />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-white" htmlFor="">
+                Email
+              </label>
+              <input
+                className="p-2 rounded-md"
+                type="email"
+                placeholder="Email@email.com"
+                name=""
+                id=""
+              />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-white" htmlFor="">
+                Message
+              </label>
+              <textarea
+                className="p-2 rounded-md"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <input
+              className="p-2 w-full rounded-md bg-azulrey text-white font-bold uppercase mt-4 cursor-pointer hover:bg-azulrey2 transition-colors"
+              type="submit"
+              value="Enviar"
+            />
+          </form>
+        </div> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 p-10 ">
           <Link
             href="https://wa.link/09md2w"
-            className="flex flex-col items-center border-2 rounded-md p-4 transition-all hover:scale-105 hover:bg-gray-50 dark:bg-transparent"
+            className="flex flex-col items-center bg-griscustom dark:bg-custom1 rounded-md p-4 transition-all hover:scale-105"
             target="_blank"
           >
             <svg
@@ -37,10 +84,9 @@ const Contacto = () => {
               {t("contact.whatsapp-contact")}
             </span>
           </Link>
-
           <Link
             href="https://www.linkedin.com/in/erick-rv/"
-            className=" flex flex-col items-center border-2 rounded-md p-4 transition-all hover:scale-105 hover:bg-gray-50 dark:bg-transparent"
+            className=" flex flex-col items-center bg-griscustom dark:bg-custom1 rounded-md p-4 transition-all hover:scale-105 "
             target="_blank"
           >
             <svg
@@ -68,7 +114,7 @@ const Contacto = () => {
           </Link>
           <Link
             href="https://github.com/Erickrova"
-            className="flex flex-col items-center border-2 rounded-md p-4 transition-all hover:scale-105 hover:bg-gray-50 dark:bg-transparent"
+            className="flex flex-col items-center bg-griscustom dark:bg-custom1 rounded-md p-4 transition-all hover:scale-105 "
             target="_blank"
             title={t("contact.github-contact-title-atribute")}
           >
@@ -92,7 +138,7 @@ const Contacto = () => {
             </span>
           </Link>
           <div
-            className="flex flex-col items-center border-2 rounded-md p-4 transition-all hover:scale-105 hover:bg-gray-50 dark:bg-transparent"
+            className="flex flex-col items-center bg-griscustom dark:bg-custom1 rounded-md p-4 transition-all hover:scale-105 "
             title={t("contact.mail-contact-title-atribute")}
           >
             <svg

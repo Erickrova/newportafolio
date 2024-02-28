@@ -38,7 +38,7 @@ const Nav = () => {
     <nav className="w-full md:w-fit  flex gap-2 flex-col items-center justify-center md:flex-row">
       <button
         onClick={handleMenu}
-        className="md:hidden w-full flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-colors"
+        className="md:hidden w-full flex items-center justify-center cursor-pointer transition-colors"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const Nav = () => {
         <Link
           href={"/"}
           onClick={() => scroll.scrollToTop(scrollType)}
-          className="text-xl hover:rounded-md font-bold hover:bg-gray-200 p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors dark:hover:bg-gray-500"
+          className="text-xl hover:rounded-md font-bold p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -78,14 +78,17 @@ const Nav = () => {
               d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
             />
           </svg>
-          <span id="navsobremi" className=" whitespace-pre dark:text-white">
+          <span
+            id="navsobremi"
+            className=" whitespace-pre dark:text-white dark:hover:text-azulrey "
+          >
             {t("header.about-me")}
           </span>
         </Link>
         <Link
           href={"/"}
           onClick={() => handleScroll("proyectossection")}
-          className="text-xl hover:rounded-md  font-bold hover:bg-gray-200 p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors dark:hover:bg-gray-500"
+          className="text-xl hover:rounded-md  font-bold  p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -106,14 +109,17 @@ const Nav = () => {
               d="M4.867 19.125h.008v.008h-.008v-.008z"
             />
           </svg>
-          <span id="navproyectos" className="dark:text-white">
+          <span
+            id="navproyectos"
+            className="dark:text-white dark:hover:text-azulrey"
+          >
             {t("header.projects")}
           </span>
         </Link>
         <Link
           href={"/"}
           onClick={() => handleScroll("contactosection")}
-          className="text-xl hover:rounded-md  font-bold hover:bg-gray-200 p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors dark:hover:bg-gray-500"
+          className="text-xl hover:rounded-md  font-bold  p-2 cursor-pointer flex gap-2 items-center justify-center w-full transition-colors "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +127,7 @@ const Nav = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="white"
-            className="w-6 h-6 stroke-black dark:stroke-white"
+            className="w-6 h-6 stroke-black dark:stroke-white dark:hover:text-azulrey"
           >
             <path
               strokeLinecap="round"
@@ -129,7 +135,10 @@ const Nav = () => {
               d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
             />
           </svg>
-          <span id="navcontacto" className="dark:text-white">
+          <span
+            id="navcontacto"
+            className="dark:text-white dark:hover:text-azulrey"
+          >
             {t("header.contact")}
           </span>
         </Link>
@@ -137,7 +146,7 @@ const Nav = () => {
           title={t("about-me.english-language")}
           className={`${
             localStorageLan == "en"
-              ? "text-red-500"
+              ? "text-azulrey"
               : "text-black dark:text-white"
           } w-full py-1 `}
           type="button"
@@ -149,7 +158,7 @@ const Nav = () => {
           title={t("about-me.spanish-language")}
           className={`${
             localStorageLan == "es"
-              ? "text-red-500"
+              ? "text-azulrey"
               : "text-black dark:text-white"
           } w-full py-1`}
           type="button"

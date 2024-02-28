@@ -5,47 +5,47 @@ import { useTranslation } from "react-i18next"
 const Habilidades = () => {
   const [t] = useTranslation("global")
   return (
-    <div className="pt-2 md:pt-16">
+    <div className="pt-16">
       <h3 className="text-center text-3xl font-bold font-roboto pb-2 dark:text-white transition-colors">
         {t("skills.skills")}
       </h3>
-      <div className="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 items-center justify-center p-6 ">
+      <div className="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4   items-center justify-center p-6 ">
         {/* agregar animacion de vibracion al dar click sobre un logo */}
         <div className="flex items-center justify-center flex-col">
-          <p className="font-medium text-center dark:text-white transition-colors">
+          <p className="font-medium text-center dark:text-white transition-colors mb-2">
             React.js
           </p>
           <Image
             className=" w-auto h-auto cursor-pointer  hover:animate-waving-hand "
             src="/img/react.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo react"
             title="react"
           />
         </div>
-        <div className="flex items-center justify-center flex-col">
+        {/* <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors">
             Vite
           </p>
           <Image
             className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
             src="/img/vite.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo vite"
             title="vite"
           />
-        </div>
+        </div> */}
         <div className="flex items-center justify-center flex-col">
-          <p className="font-medium text-center dark:text-white transition-colors">
+          <p className="font-medium text-center dark:text-white transition-colors mb-2">
             Next.js
           </p>
           <Image
             className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
             src="/img/next.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo next"
             title="next"
           />
@@ -89,41 +89,41 @@ const Habilidades = () => {
               title="sass"
             />
           </div> */}
-        <div className="flex items-center justify-center flex-col">
+        {/* <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors">
             JavaScript
           </p>
           <Image
             className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
             src="/img/javascript.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo javascript"
             title="javaScript"
           />
-        </div>
+        </div> */}
         <div className="flex items-center justify-center flex-col">
-          <p className="font-medium text-center dark:text-white transition-colors">
+          <p className="font-medium text-center dark:text-white transition-colors mb-2">
             TypeScript
           </p>
           <Image
             className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
             src="/img/typescript.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo typescript"
             title="typeScript"
           />
         </div>
-        <div className="flex items-center justify-center flex-col">
+        {/* <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors">
             MySQL
           </p>
           <Image
             className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
             src="/img/mysql.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo mysql"
             title="mysql"
           />
@@ -133,49 +133,49 @@ const Habilidades = () => {
             MongoDB
           </p>
           <Image
-            className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
+            className=" w-[60px] h-[60px] cursor-pointer hover:animate-waving-hand"
             src="/img/mongodb.svg"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo mongodb"
             title="mongoDB"
           />
-        </div>
+        </div> */}
         <div className="flex items-center justify-center flex-col">
-          <p className="font-medium text-center dark:text-white transition-colors">
+          <p className="font-medium text-center dark:text-white transition-colors mb-2">
             Node.js
           </p>
           <Image
             className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
             src="/img/node.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo nodejs"
             title="nodeJS"
           />
         </div>
         <div className="flex items-center justify-center flex-col">
-          <p className="font-medium text-center dark:text-white transition-colors">
+          <p className="font-medium text-center dark:text-white transition-colors mb-2">
             Express.js
           </p>
           <Image
             className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
             src="/img/express.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo express"
             title="expressJS"
           />
         </div>
-        <div className="flex items-center justify-center flex-col">
+        {/* <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors">
             Socket.io
           </p>
           <Image
             className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
             src="/img/socketio.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo socketio"
             title="socket.io"
           />
@@ -185,10 +185,10 @@ const Habilidades = () => {
             Tailwindcss
           </p>
           <Image
-            className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
+            className=" w-[70px] h-[70px] cursor-pointer hover:animate-waving-hand"
             src="/img/tailwind.svg"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo tailwindcss"
             title="tailwindcss"
           />
@@ -200,8 +200,8 @@ const Habilidades = () => {
           <Image
             className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
             src="/img/jest.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo jest"
             title="jest"
           />
@@ -213,12 +213,12 @@ const Habilidades = () => {
           <Image
             className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
             src="/img/testinglibrary.png"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="logo testing library"
             title="testing library"
           />
-        </div>
+        </div> */}
 
         {/* <Image className=" cursor-pointer " src="/img/docker.png" width={200} height={200} layout="responsive" alt="logo docket" title="docket"  />
          */}

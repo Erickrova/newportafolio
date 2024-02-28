@@ -72,6 +72,22 @@ const proyectos = [
         descripcion: "Promocional para Festival de ROCK & EDM",
         img:"/proyectos/rockandedm.png",
         url: "https://festivalerick.netlify.app"
+    },
+    {
+        id:10,
+        nombre: "Letras Erick",
+        path:"letras-erick",
+        descripcion: "Buscador de letras de canciones",
+        img:"/proyectos/letraserick.png",
+        url: "https://letrasericck.netlify.app"
+    },
+    {
+        id:11,
+        nombre: "Erick Animations",
+        path:"erick-animations",
+        descripcion: "Web donde practico animaciones css",
+        img:"/proyectos/erickanimations.png",
+        url: "https://erickanimations.netlify.app"
     }
 ]
 

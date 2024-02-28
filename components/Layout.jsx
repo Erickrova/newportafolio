@@ -2,6 +2,7 @@ import Head from "next/head"
 import Header from "./Header"
 import { useEffect } from "react"
 import { animateScroll as scroll } from "react-scroll"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const Layout = ({ children }) => {
     }
   }, [])
   return (
-    <div className="overflow-x-hidden scroll-smooth relative bg-white dark:from-black dark:to-neutral-800 dark:bg-gradient-to-b transition-colors">
+    <div className="overflow-x-hidden scroll-smooth relative bg-white dark:bg-custom2 transition-colors">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
 
       <Header />
       <main className="md:pt-14 pt-24">{children}</main>
+      <Footer />
     </div>
   )
 }

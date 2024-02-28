@@ -8,7 +8,7 @@ const DarkModeSwitch = () => {
       <div
         onClick={() => setEnabled(!enabled)}
         className={`w-16 h-6 ${
-          enabled ? "bg-indigo-900" : "bg-gray-200"
+          enabled ? "bg-indigo-900" : "bg-amber-400"
         } rounded-full transition-colors relative cursor-pointer`}
       >
         <div

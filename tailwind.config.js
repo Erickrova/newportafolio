@@ -10,7 +10,15 @@ module.exports = {
       'eczar': ['Eczar', 'serif'],
       'roboto': ['Roboto','sans-serif;'],
     },
+    
     extend: {
+      colors:{
+        custom1:"#252525",
+        custom2:"#141414",
+        azulrey:"#0404e2",
+        azulrey2:"#040482",
+        griscustom:"#fff",
+      },
       keyframes: {
         wave: {
           '0%': { transform: 'rotate(0.0deg)' },
@@ -28,6 +36,10 @@ module.exports = {
       },
       animation: {
         'waving-hand': 'wave 2s linear infinite',
+        'zoom-in-0': 'zoom-in 0.5s linear ;',
+        'zoom-in-3': 'zoom-in 0.5s 0.3s linear ;',
+        'zoom-in-5': 'zoom-in 0.5s 0.5s linear ;',
+        'zoom-in-6': 'zoom-in 0.5s 0.6s linear ;',
       },
     },
   },

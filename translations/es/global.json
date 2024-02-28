@@ -9,15 +9,17 @@
         "profession":"Desarrollador Frontend",
         "download-cv-button":"Descargar CV",
         "see-cv-title-atribute":"Ver CV",
-        "description":"Persona apasionada por la Tecnología y el desarrollo de soluciones web, con ganas de aprender, que sabe escuchar, aprender de los demás y esta en constante búsqueda del conocimiento.",
+        "description":"Desarrollador Web Frontend con 5 meses de experiencia, fuertes habilidades y conocimiento, comprometido con la evolución constante y la búsqueda de conocimiento.",
         "title-academy-data":"Datos Académicos",
         "university":"Universidad Marco Fidel Suarez",
+        "courses-and-university":"Cursos y Univesidad",
         "career":"Ingeniería de Sistemas",
         "career-semester":"3er Semestre",
         "languages":"Idiomas",
         "spanish-language":"Español",
         "english-language":"Ingles",
-        "native":"Nativo"
+        "native":"Nativo",
+        "slogan":"Comprometido con la excelencia y la evolución constante."
     },
     "skills":{
         "skills":"Habilidades"
@@ -33,5 +35,6 @@
         "github-contact":"Visita mi Github",
         "github-contact-title-atribute":"Revisa el codigo de algunos de los proyectos en mi github",
         "mail-contact-title-atribute":"Contáctame via Mail"
-    }
+    },
+    "copyright":"Creado por Erick Romaña | © Copyright 2024"
 }
