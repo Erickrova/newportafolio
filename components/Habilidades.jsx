@@ -50,15 +50,15 @@ const Habilidades = () => {
             title="next"
           />
         </div>
-        {/* <div className="flex items-center justify-center flex-col">
+        <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors">
             Html
           </p>
           <Image
             className=" cursor-pointer hover:animate-waving-hand"
             src="/img/html.png"
-            width={100}
-            height={100}
+            width={70}
+            height={70}
             alt="logo html"
             title="html"
           />
@@ -70,12 +70,12 @@ const Habilidades = () => {
           <Image
             className=" cursor-pointer hover:animate-waving-hand"
             src="/img/css.png"
-            width={100}
-            height={100}
+            width={70}
+            height={70}
             alt="logo css"
             title="css"
           />
-        </div> */}
+        </div>
         {/* <div className="flex items-center justify-center flex-col">
             <p className="font-medium text-center dark:text-white transition-colors">
               Sass
@@ -89,7 +89,7 @@ const Habilidades = () => {
               title="sass"
             />
           </div> */}
-        {/* <div className="flex items-center justify-center flex-col">
+        <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors">
             JavaScript
           </p>
@@ -101,7 +101,7 @@ const Habilidades = () => {
             alt="logo javascript"
             title="javaScript"
           />
-        </div> */}
+        </div>
         <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors mb-2">
             TypeScript
@@ -128,6 +128,7 @@ const Habilidades = () => {
             title="mysql"
           />
         </div>
+        */}
         <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors">
             MongoDB
@@ -140,7 +141,7 @@ const Habilidades = () => {
             alt="logo mongodb"
             title="mongoDB"
           />
-        </div> */}
+        </div>
         <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors mb-2">
             Node.js
@@ -167,19 +168,6 @@ const Habilidades = () => {
             title="expressJS"
           />
         </div>
-        {/* <div className="flex items-center justify-center flex-col">
-          <p className="font-medium text-center dark:text-white transition-colors">
-            Socket.io
-          </p>
-          <Image
-            className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
-            src="/img/socketio.png"
-            width={50}
-            height={50}
-            alt="logo socketio"
-            title="socket.io"
-          />
-        </div>
         <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors">
             Tailwindcss
@@ -193,6 +181,20 @@ const Habilidades = () => {
             title="tailwindcss"
           />
         </div>
+        {/* <div className="flex items-center justify-center flex-col">
+          <p className="font-medium text-center dark:text-white transition-colors">
+            Socket.io
+          </p>
+          <Image
+            className=" w-auto h-auto cursor-pointer hover:animate-waving-hand"
+            src="/img/socketio.png"
+            width={50}
+            height={50}
+            alt="logo socketio"
+            title="socket.io"
+          />
+        </div>
+        
         <div className="flex items-center justify-center flex-col">
           <p className="font-medium text-center dark:text-white transition-colors">
             Jest

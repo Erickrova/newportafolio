@@ -6,7 +6,7 @@ const Hojadevida = () => {
     <Layout>
       <div className="pt-4">
         <iframe
-          className="w-full h-screen"
+          className="w-full h-screen overflow-y-hidden"
           src="ErickRomañaHojadeVida.pdf"
         ></iframe>
       </div>
